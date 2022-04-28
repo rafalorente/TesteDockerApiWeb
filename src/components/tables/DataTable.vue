@@ -4,6 +4,9 @@
     :items="lista"
     :items-per-page="5"
     class="elevation-1"
+    :footer-props="{
+           'items-per-page-text':'Itens por página'
+      }"
   ></v-data-table>
 </template>
 
