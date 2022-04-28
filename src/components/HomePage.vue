@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import axios from 'axios';
+// import axios from 'axios';
 
 export default {
   name: 'HomePage',
@@ -13,9 +13,9 @@ export default {
     msg: String
   },
   mounted(){
-    axios
-      .get('https://localhost:5001/api/Universidade/GetUniversidadePorPais?pais=brazil')
-      .then(response => (console.log(response)));
+    // axios
+    //   .get('https://localhost:5001/api/Universidade/GetUniversidadePorPais?pais=brazil')
+    //   .then(response => (console.log(response)));
   }
 }
 </script>
