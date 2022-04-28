@@ -1,10 +1,10 @@
 <template>
-  <div class="hello">
-    <v-row class="w-100 d-flex">
+  <div class="homepage">
+    <div class="filter">
    <SelectField @update:value="pais = $event"/>
    <SendButton @buscar="pesquisarUniversidade();"/>
+    </div>
    <DataTable v-if="listaUniversidade.length > 0" :lista="listaUniversidade"/>
-   </v-row>
   </div>
 </template>
 
@@ -45,18 +45,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
+.homepage{
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+.filter{
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 </style>
