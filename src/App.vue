@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div data-app id="app">
     <HomePage/>
   </div>
 </template>
@@ -9,6 +9,7 @@ import HomePage from './components/HomePage.vue'
 
 export default {
   name: 'App',
+
   components: {
     HomePage
   }
